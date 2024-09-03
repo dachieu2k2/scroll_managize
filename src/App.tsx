@@ -5,7 +5,7 @@ import { Canvas } from '@react-three/fiber';
 
 import './App.css';
 import Scene from './Components/Scene';
-import { UI } from './Components/UI';
+import Ui from './Components/UI';
 
 function App() {
   const { orbitcontrols, axesHelper } = useControls('mainControls', {
@@ -27,7 +27,7 @@ function App() {
       </Canvas>
       <Leva collapsed hidden />
       <Loader />
-      <UI />
+      <Ui />
     </>
   );
 }

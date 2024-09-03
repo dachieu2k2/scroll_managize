@@ -1,7 +1,7 @@
 import { Environment, Float, ScrollControls } from '@react-three/drei';
 
+import { pages } from '../Stores';
 import { Book } from './Book';
-import { pages } from './UI';
 
 const PAGES = pages.length;
 
