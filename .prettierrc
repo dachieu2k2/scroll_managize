@@ -1,0 +1,25 @@
+{
+  "endOfLine": "auto",
+  "printWidth": 80,
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "tabWidth": 2,
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrder": [
+    "^react$",
+    "^(react-.+|@react-.+|prop-types)$",
+    "^mobx-react$",
+    "^launchdarkly-react-client-sdk$",
+    "^nprogress$",
+    "^nprogress/nprogress.css$",
+    "^(.*)/stores/(.*)$",
+    "^(.*)/utils/(.*)$",
+    "^(.*)/hooks/(.*)$",
+    "^(.*)/components/(.*)$",
+    "^(.*)/src/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}

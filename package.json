@@ -1,0 +1,46 @@
+{
+  "name": "base_shader",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "check-types": "tsc --pretty --noEmit",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "pre-commit": "yarn lint && yarn prettier && yarn check-types",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.77.1",
+    "@react-three/fiber": "^8.13.0",
+    "gl-noise": "^1.6.1",
+    "jotai": "^2.9.3",
+    "leva": "^0.9.34",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "three": "^0.154.0",
+    "three-custom-shader-material": "^5.4.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/three": "^0.154.0",
+    "@types/uuid": "^9.0.1",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "husky": "^9.1.5",
+    "prettier": "^3.3.3",
+    "typescript": "^5.1.6",
+    "vite": "^4.3.2"
+  }
+}
