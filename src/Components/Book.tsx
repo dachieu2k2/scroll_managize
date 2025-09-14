@@ -90,9 +90,9 @@ const pageMaterials = [
 ];
 
 pages.forEach((page) => {
-  useTexture.preload(`/textures/${page.front}.jpg`);
-  useTexture.preload(`/textures/${page.back}.jpg`);
-  useTexture.preload(`/textures/book-cover-roughness.jpg`);
+  useTexture.preload(`/textures2/${page.front}.jpg`);
+  useTexture.preload(`/textures2/${page.back}.jpg`);
+  useTexture.preload(`/textures2/book-cover-roughness.jpg`);
 });
 
 interface IPage {
@@ -114,8 +114,8 @@ const Page = ({
   ...props
 }: IPage & JSX.IntrinsicElements['group']) => {
   const [picture, picture2, pictureRoughness] = useTexture([
-    `/textures/${front}.jpg`,
-    `/textures/${back}.jpg`,
+    `/textures2/${front}.jpg`,
+    `/textures2/${back}.jpg`,
     ...(number === 0 || number === pages.length - 1 ? [] : []),
   ]);
   picture.colorSpace = picture2.colorSpace = SRGBColorSpace;
@@ -186,7 +186,7 @@ const Page = ({
       return;
     }
 
-    const emissiveIntensity = highlighted ? 0.22 : 0;
+    const emissiveIntensity = highlighted ? 0.18 : 0;
     skinnedMeshRef.current.material[4].emissiveIntensity =
       skinnedMeshRef.current.material[5].emissiveIntensity = MathUtils.lerp(
         skinnedMeshRef.current.material[4].emissiveIntensity,
